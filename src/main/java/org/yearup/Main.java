@@ -10,8 +10,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
     {
-        OnlineStoreApp app = new OnlineStoreApp();
-        //app.run();
+        StoreHomeScreen app = new StoreHomeScreen();
+        app.run();
 
     }
 

@@ -2,12 +2,12 @@ package org.yearup;
 
 public class Products
 {
-    private int id;
+    private String id;
     private String name;
     private double price;
 
 
-    public Products(int id, String name, double price)
+    public Products(String id, String name, double price)
     {
         this.id = id;
         this.name = name;
@@ -16,11 +16,11 @@ public class Products
     //getter & setter
 
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

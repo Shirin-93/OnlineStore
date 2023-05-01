@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class OnlineStoreApp {
-    private HashMap<Integer, Products> inventoryMap = new HashMap<Integer, Products>();
+    private HashMap<String, Products> inventoryMap = new HashMap<String, Products>();
     private ArrayList<Products> cart = new ArrayList<Products>();
 
     public OnlineStoreApp() {
@@ -20,7 +20,7 @@ public class OnlineStoreApp {
             Scanner scanner = new Scanner(new File("OnlineStoreData/inventory.csv"));
             while (scanner.hasNextLine()) {
                 String[] line = scanner.nextLine().split("\\|");
-                int id = Integer.parseInt(line[0]);
+                String id = line[0];
                 String name = line[1];
                 double price = Double.parseDouble(line[2]);
                 Products product = new Products(id, name, price);
